@@ -1,0 +1,11 @@
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    quantidade_estoque INT NOT NULL DEFAULT 0
+)
+
+CREATE TABLE vendas (
+    id SERIAL PRIMARY KEY,
+    data_venda TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    cliente_nome VARCHAR(100) NOT NULL
+)
